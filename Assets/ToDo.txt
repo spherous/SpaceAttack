@@ -1,0 +1,102 @@
+THEME: On the Edge
+RESTRICTION: Boss
+
+Controls:
+    Keyboard/Mouse:
+        X WASD
+        X Look to mouse pointer
+        X Click to shoot
+        X Esc to toggle pause
+        X Spacebar to activate power
+
+X Screen wrap
+    X FX
+
+X Blitz timer
+    FX
+Energy/power meter/scale
+    Art
+    X Damage from going too far should be % based, not flat numbers
+    X active blue buff
+        X speed you up
+        X slow down enemies within some radius (draw radius w/color)
+    X active red buff
+        X power your shots
+        X slow enemy attacks/reduce damage in radius (draw radius w/color)
+X Health bars
+
+Boss fight
+    - stays on edge
+        - locks the edge it's on from being wraped from/to
+    - spawns enemies/rocks
+    - multiple phases
+Trash enemies
+    X 1 or 2 types of AI (short/long range)
+    X does not screenwrap
+    art
+Waves of enemies - should scale logrithmically in difficulty
+    X Each wave has a max time, if the player doesn't clear the wave in that time, the next wave starts and joins them
+    X If the player clears the wave faster than the max time, there is a "in between waves" timer that starts the next wave early.
+    X Wave Complete notification
+        audio
+    X Clearing a wave should add a bonus to the blitz timer
+    X Preset waves should have a challenge rating, when choosing a wave preset, randomize from all waves in that CR.
+    X Waves should spawn over time, not all at once
+    After highest CR wave is completed, use a scalable wave to randomize + scale endlessly.
+
+X Rocks/Astroids
+    art
+    adjust sizes
+
+Powerups! (maybe 1 at start then another every x numbers of points where x grows each time or every x(5?) amount of waves (this might need to have levels))
+    At start, give weapon power up choice
+        X Blaster
+        X Rockets
+        X Shotgun
+        X Laser beam
+        /Cluster Bombs
+    Types
+        X Caliber
+        X Proj speed
+        X Fire rate
+        X Multi shot (does what to laser beam?)
+        X A heal
+        /Chain/Fork?
+        /Temp resource powerup AOE
+
+X Pause Screen
+X Gameover/score screen
+X Highscore
+
+Audio
+    Boss
+
+Art
+    2x enemy
+    Resource too full, press space
+    color based on active power (blue/red)
+
+Polish
+    Hide full hp bars for enemies, but always show if not full.
+    Always show player hp bar if low, hide after delay if not low, and show when taking damage for a duration.
+
+Stretch:
+    Mouse distance from player tightens/widens arc in multishot
+    Collision damage
+    Suicide bomber enemy type
+    indicate where an enemy is coming from off screen
+
+Bugs
+    Shotgun transparency isn't working (Probably true for blaster as well)
+    Sometimes rockets cause explosion in the middle of the screen as well as in the correct loc
+    particle should scale with laser size
+
+Boss Mechanics
+    moves in and out of screen, locking screenwrap on the side it's on, as well as the opposite side
+    2 Lasers that sweep across the screen at an offset, forcing the player to screenwrap
+    releases enemies
+    after it leaves the screen, it throws rocks at the player from the side it left on
+    2 turrets that shoot blasters at the player
+        these can be destroyed
+    only takes damage at weak points
+    
